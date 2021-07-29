@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 350;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #eee;
+}
+body::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #fff;
+  background-image: linear-gradient(155deg,
+  rgba(60, 60, 60, .5),
+  rgba(106, 90, 206, .6)
+  ),
+    url('https://picsum.photos/900/1200?random=10');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#title {
+  font-size: 2.0rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#description {
+  font-size: 1.1rem;
+  letter-spacing: 1px
+}
+.container {
+  width: 100%;
+  margin: 3rem auto 0;
+}
+form {
+  max-width: 720px;
+  background:rgba(0, 0, 0, .8);
+  padding: 2rem;
+  margin: 3rem auto 0;
+  border-radius: 5px;
+}
+header {
+  text-align: center;
+  line-height: 1.6;
+}
+.form-items {
+  padding: .5rem;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+input {
+  border: none;
+}
+.form-control,
+textarea,
+button {
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  padding: .5rem;
+  font-size: 1rem;
+  border: none;
+}
+.title {
+  margin-top: 1rem;
+  font-weight: 700
+}
+.average,
+.booking {
+  display: inline-block;
+  margin-right: .7rem;
+}
+.avrage {
+  margin-buttom: 1rem;
+}
+button {
+  background-color: #35A3FF;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  body {
+  font-weight: 200;
+  line-height: 1.2;
+  }
+  .container {
+  max-width: 720px;
+  }
+  form {
+  padding: 2.5rem;
+  margin: 0;
+  }
+  textarea {
+    margin-top: .5rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+  max-width: 400px;
+  }
+  header {
+  padding: 0 1rem;
+  }
+  form {
+  padding: 1.8rem 1rem;
+  margin: 3rem 0 0;
+  }
+  label {
+    padding-bottom: .5rem;
+  }
+  .booking {
+  padding: 1rem 0;
+  }
+}
