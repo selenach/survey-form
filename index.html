@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="survey-form.css">
+</head>
+<body>
+    <div class='container'>
+        <header class='header'>
+          <h1 id='title'>Airline company Survey Form
+          </h1>
+          <p id='description'>Thank you for taking the time to help us gather information
+          </p>
+        </header>
+        <form id='survey-form' action='/action_page.php'>
+            <div class='form-items'>
+              <label id='name-label' for='name'>Name</label>
+              <input 
+                     id='name' 
+                     type='text' 
+                     name='name' 
+                     class='form-control' placeholder='Please enter your name' required/>
+            </div>
+          
+            <div class='form-items'>
+              <label id='email-label' for='email'>Email</label>
+              <input 
+                     id='email' 
+                     type='email' 
+                     name='email' 
+                     class='form-control' placeholder='Please enter your email' required/>
+            </div>
+          
+            <div class='form-items'>
+              <label id='number-label' for='number'>Age</label>
+              <input 
+                     id='number' 
+                     type='number' 
+                     name='number' 
+                     min='7' 
+                     max='99' 
+                     class='form-control' 
+                     placeholder='Age' 
+                     required>
+            </div>
+            <div class='form-items'>
+              <label id='dropdown' for='dropdown'>Please choose your gender </label>
+              <select 
+                     id='dropdown' 
+                     name='gender' 
+                     class='form-control' required>
+                <option value='male'>Male</option>
+                <option value='female'>Female</option>
+                <option vale='x'>X</option>
+              </select>
+            </div> 
+          
+            <div class='form-items'>
+              <p class='title'>How many times do you fly a year on average ?</p>
+              <label><input type='radio' name='average' value='2' class='average'/>
+              0 - 2</label>
+              
+              <label><input type='radio' name='average' value='5' class='average'/>
+              3 - 5</label>
+              
+              <label><input type='radio' name='average' value='8' class='average'/>
+              6 - 8</label>
+              
+              <label><input type='radio' name='average' value='11' class='average'/>
+              9 - 11</label>
+              
+              <label><input type='radio' name='average' value='12' class='average'/>
+              Over 12</label>
+            </div>
+          
+            <div class='form-items'>
+              <p class='title'>Factors you consider when booking a flight ?</p>
+              
+              <label><input type='checkbox' name='booking' value='total-cost' class='booking'/>The total cost of air travel, including base fare & airline fees.</label>
+              
+              <label><input type='checkbox' name='booking' value='ticket-cost' class='booking'/>The cost of an airline ticket (not including fees).</label>
+              
+              <label><input type='checkbox' name='booking' value='flight-schedule' class='booking'/>Flight schedule, including time of departure/arrival.</label>
+              
+              <label><input type='checkbox' name='booking' value='total-time' class='booking'/>The total time it takes to fly.</label>
+              
+              <label><input type='checkbox' name='booking' value='flight-cancellations' class='booking'/>Likelihood of flight delays and cancellations.</label>
+              
+              <label><input type='checkbox' name='booking' value='loyalty' class='booking'/>Loyalty to a specific airline.</label>
+              
+              <label><input type='checkbox' name='booking' value='gov-taxes' class='booking'/>The total amount of government taxes/fees on the airline ticket.</label>
+              
+              <label><input type='checkbox' name='booking' value='airport-security' class='booking'/>The hassle of going through airport security.</label>
+            </div>
+          
+            <div class='form-items'>
+              <p class='title'>Any comments or suggestions ?</p>
+              <textarea id='comment' name='comment' placeholder='Please enter your comment here'></textarea>
+            </div>
+          
+            <div class='form-items'>
+              <button type='submit' id='submit'>Submit</button>
+            </div>
+           </form>
+          </div>
+      
+</body>
+</html>
